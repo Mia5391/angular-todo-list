@@ -8,13 +8,13 @@
     <table>
       <tr *ngFor="let task of tasks" class="even">
         <td>
-          <pre>
-            {{task}}
+          <pre [class.is-done]="task.isDone">
+            {{task.title}}
           </pre>
         </td>
         <td>
           <button  (click)="remove(task)" class="remove-button">Remove Task</button>  
-          <button class="done-button">Done</button>  
+          <button (click)="markAsDone(task)" class="done-button">Done</button>  
         </td>
       </tr>
     </table>
