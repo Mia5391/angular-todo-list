@@ -26,15 +26,14 @@ export class AppComponent {
     }  
   }
 
-  toggleIsDone(task: Task){
-    task.isDone = !task.isDone;
-
-  }
-
 }
 
 class Task {
   constructor(public title: string){
+
+  }
+  toggleIsDone(){
+    this.isDone = !this.isDone;
 
   }
 
