@@ -14,4 +14,8 @@ export class AppComponent {
     "Go to the gym",
     "Party Shopping"
   ]
+
+  add(newTask: string){
+    this.tasks.push(newTask)
+  }
 }
