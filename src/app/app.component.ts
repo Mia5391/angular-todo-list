@@ -26,8 +26,8 @@ export class AppComponent {
     }  
   }
 
-  markAsDone(task: Task){
-    task.isDone = true;
+  toggleIsDone(task: Task){
+    task.isDone = !task.isDone;
 
   }
 
